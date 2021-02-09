@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
+
+body {
+   background-color: #202020;
+   margin: 0px;
+}
+
+.icon {
+  position: absolute;
+  height: 80px;
+  width: 80px;
+  border-radius: 40px;
+  overflow: hidden; 
+  background-color: white;
+  cursor: pointer;
+  transition: border-radius ease-out 0.15s;
+  background-position: center center;
+  background-size: 90%;
+  opacity: 1;
+  z-index: 5;
+}
+
+.icon-shade {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  opacity: 0.3;
+  transition: opacity ease-out 0.15s;
+}
+
+.icon-shade:hover {
+  opacity: 0;
+}
+
+.icon:hover {
+    border-radius: 25px;
+}
+
+#icon-container {
+  position: absolute;
+  display: flex;
+  height: 190px;
+  width: 300px;
+  top: calc(50% - (170px/2));
+  left: calc(50% - (300px/2));
+  z-index: 2;
+  opacity: 0;
+  transition: top ease 0.5s, opacity ease 0.5s; 
+}
+
+#gradient {
+  position: absolute;
+  height: 50%;
+  width: 100%;
+  left: 0px;
+  bottom: 0px;
+  z-index: 1;
+  background: rgb(0,0,0);
+  background: linear-gradient(0deg, rgba(0,0,0,1), rgba(0,212,255,0) 100%);
+  opacity: 0;
+  transition: opacity ease 0.5s;
+}
+
+#bg-img {
+  width: 100%;
+  height: 100%;
+  padding: 0px;
+  margin: 0px;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity ease 0.5s;
+}
+
+#icon-1 {
+  left: 0px;
+  top: 0px;
+  background-image: url("buttonicons/drive.png");
+}
+
+#icon-2 {
+  left: calc(50% - (75px/2));
+  top: 0px;
+  background-image: url("buttonicons/monday.png");
+}
+
+#icon-3 {
+  right: 0px;
+  top: 0px;
+  background-image: url("buttonicons/overleaf.png");
+}
+
+#icon-4 {
+  left: 0px;
+  bottom: 0px;
+  background-image: url("buttonicons/aau.png");
+}
+
+#icon-5 {
+  left: calc(50% - (75px/2));
+  bottom: 0px;
+  background-image: url("buttonicons/outlook.png");
+}
+
+#icon-6 {
+  right: 0px;
+  bottom: 0px;
+  background-image: url("buttonicons/git.png");
+}
+
+#logo-container {
+  background-color: red;
+  position: absolute;
+  top: 0px;
+  left: calc(50% - 300px);
+  width: 600px;
+  height: 200px;
+}
+
+#banner {
+  position: absolute;
+  width: 100px;
+  left: 20;
+  top: 20px;
+  transition: opacity ease 0.5s;
+  opacity: 0;
+  antialiasing:
+}
