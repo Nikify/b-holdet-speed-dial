@@ -1,4 +1,4 @@
-![Alt text](images/banner.png)
+![Alt text](images/banner_color.png)
 ## :fire: B-Holdet Speed Dial 
 A crhome extension for replacing the standard 'new tab' page with the highly customized speed dial dashboard 
 ## How to install
